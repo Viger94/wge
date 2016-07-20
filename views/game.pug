@@ -1,0 +1,25 @@
+extends ./layout.pug
+block content
+	body
+		.container
+			h2 Начало игры
+			p Для того что бы начать играть в нашу игру необходимо создать персонажа.
+			.row
+				.col-xs-12.col-sm-6
+					p Тут будет генератор аватара!
+					form(name="makepers", action="/makepers", method="post")
+						label(for='persname') И персонажа
+						input(type='text' name='persname' placeholder='Девид Пилчер')
+						label(for='persgender') Пол персонажа
+						select(name='persgender')
+							option(name='male') Муж
+							option(name='female') Жен
+				.col-xs-12.col-sm-6#bioglist
+					p Выберите вариант биографии персонажа:
+					ul
+						li Гений ученый предсказавший и доказавший то что человечество деградирует в ближайшее время
+						li Чекнутый профессор который думает что человечество деградирует в ближайшее время
+						li Религиозный фанатик которому "оно" сказало что человечество деградирует в ближайшее время
+						li Миллионер филантроп который думает что человечество деградирует в ближайшее время
+			a(href="/game/step1") Далее
+		include debug

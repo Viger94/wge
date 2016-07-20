@@ -1,0 +1,12 @@
+extends ./layout.pug
+block content
+	body
+		.container
+			h4 Вход в аккаунт
+			form(action='/login' method='post')
+			  fieldset
+				label(for='email') Email
+				input(type='email' name='email' placeholder='Ваш Email')
+				label(for='password') Пароль
+				input(type='password' name='password' placeholder='Ваш пароль')
+				button(type='Login')

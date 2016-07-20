@@ -1,0 +1,9 @@
+extends ./layout.pug
+block content
+	body
+		.container
+			h1 Public Page
+			p Welcome to Public page
+			a(href='lk') this is private page. You can try to open it.
+			include parts/login
+			include parts/register

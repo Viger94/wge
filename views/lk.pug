@@ -1,0 +1,23 @@
+extends ./layout.pug
+block content
+	body
+		.container
+			.row
+				.col-xs-12
+					include parts/profile
+			h1 Добропожаловать в игру Wayward Pines!
+			p Мы рады приветствовать Вас в нашей игре посвященной сериалу Сосны.
+			.row
+				.col-xs-12
+					include parts/news
+			.row
+				.col-xs-12.col-sm-4
+					include parts/worlds
+				.col-xs-12.col-sm-4
+					include parts/pers
+				col-xs-12.col-sm-4
+					include parts/cityes
+			.row
+				.col-xs-12
+					include parts/chat
+		include debug

@@ -1,0 +1,24 @@
+extends ./layout.pug
+block content
+	body
+		.container
+			h1 В процессе..
+			p Welcome to11 #{title}
+			.row
+				col-xs-12.col-sm-8
+					include parts/news
+				col-xs-12.col-sm-4
+					- var user = { name: 'John' }
+					if user
+						div.welcomebox
+							p.
+								Welcome, #{user.name}
+							p
+								a( href="/game" ) В игру!
+					else
+						div.loginbox
+							form(name="login", action="/login", method="post")
+								input(type="text", name="user")
+								input(type="password", name="pass")
+								input(type="submit", value="login")
+		include debug

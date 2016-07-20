@@ -1,0 +1,40 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: url(../images/background.jpg);
+  background-size: cover;
+}
+.container {
+	background: rgba(255,255,255,0.9);
+}
+a {
+  color: #00B7FF;
+}
+#news {
+	background: rgba(133,133,133,0.5);
+	padding:5px;
+}
+#news ul {
+	padding-left:0;
+	width:100%;
+	max-height:200px;
+	overflow-y:auto;
+	overflow-x:hidden;
+	}
+#newslist li {	
+	list-style:none;
+	padding:3px;
+}
+#newslist li:nth-child(odd) {
+	background: rgba(133,133,133,0.5);
+	}
+	
+#profile li {display: inline-block; padding:10px; font-size:1.2em;}
+#profile li:hover {background: rgba(133,133,133,0.5);}
+#profile #active {background:rgba(255,255,255,0.5);}
+
+#gamelists {width:100%; padding-bottom:15px;}
+#gamelists thead {padding:5%; background: rgba(133,133,133,0.5); border-bottom: 1px solid grey; text-align: center;}
+#gamelists tr,td {padding:5%;}
+#gamelists tbody tr:nth-child(even) { background: rgba(133,133,133,0.5); border-bottom: 1px solid grey;}
+#gamelists tbody tr:hover {background: rgba(133,133,133,0.8);}
